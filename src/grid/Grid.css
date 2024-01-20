@@ -1,0 +1,10 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(50, 20px);
+}
+.container {
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
