@@ -2,5 +2,10 @@
     justify-content: center;
     height: 100vh;
     display: flex;
-    align-items: left;
+}
+h1 {
+    color: blueviolet;
+    display: flex;
+
+    justify-content: center;
 }

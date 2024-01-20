@@ -10,7 +10,9 @@ const Button = ({ onClick }) => {
 
     return (
         <div>
-            <button onClick={handleClick}>Clear!</button>
+            <button onClick={handleClick} disabled={isClicked}>
+                {isClicked ? "Cleared!" : "Clear All"}
+            </button>
         </div>
     );
 };
