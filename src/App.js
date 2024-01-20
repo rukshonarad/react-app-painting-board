@@ -26,7 +26,7 @@ function App() {
 
     const handleClearAll = () => {
         const clearedGridState = Array.from({ length: 30 }, () =>
-            Array(30).fill("#FFFFFF")
+            Array(30).fill(null)
         );
         setGridState(clearedGridState);
     };
@@ -35,9 +35,9 @@ function App() {
         <div className="container">
             <h1>React Painting Board</h1>
             <div className="container">
+                <Button onClick={handleClearAll} />
                 <ColorPalette onColorSelect={handleColorSelect} />
                 <Grid gridState={gridState} onCellClick={handleCellClick} />
-                <Button onClick={handleClearAll} />
             </div>
         </div>
     );
